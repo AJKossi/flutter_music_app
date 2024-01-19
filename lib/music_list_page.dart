@@ -10,21 +10,21 @@ class MusicListPage extends StatefulWidget {
 class _MusicListPageState extends State<MusicListPage> {
   List<Map<String, dynamic>> feedItems = [
     {
-      "name": "Sweather Waether",
+      "name": "Kossi ADANOU",
       "title": "The Neighborhood",
       "profile":
           "https://storage.googleapis.com/makifaa_public/tw550_jeune-swag.webp",
       "is_audio": true
     },
     {
-      "name": "Someone You LOved",
+      "name": "Komi ADANOU",
       "title": "Lewis Capaldi",
       "profile":
           "https://variety.com/wp-content/uploads/2021/09/Drake-publicity3-2021.jpg",
       "is_audio": false
     },
     {
-      "name": "The Hills",
+      "name": "Sefako Gnamavo",
       "title": "The Weekend",
       "profile":
           "https://www.nairaland.com/attachments/12420653_img20200922123338_jpegc3324609d3a50ff0aa04abe7a3a7376e",

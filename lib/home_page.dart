@@ -45,7 +45,11 @@ class _HomePageState extends State<HomePage> {
           ),
         ),
       ),
-      body: pages[activeIndex]// This trailing comma makes auto-formatting nicer for build methods.
+      body: pages[activeIndex],
+      floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,
+      floatingActionButton: ElevatedButton(
+        onPressed: _PMusicDrawer, child:Text("Open menu")),
+      // This trailing comma makes auto-formatting nicer for build methods.
     );
   }
 
