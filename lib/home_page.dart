@@ -25,45 +25,96 @@ class _HomePageState extends State<HomePage> {
     return Scaffold(
       key: sc,
       backgroundColor: Colors.black,
-      drawer: Drawer(
-        backgroundColor: Colors.white,
-        width: 240,
-      ),
-      bottomNavigationBar: BottomNavigationBar(
-        items: [
-          BottomNavigationBarItem(icon: Icon(Icons.home), label: "Home"),
-          BottomNavigationBarItem(
-              icon: Icon(Icons.credit_card), label: "Payments"),
-          BottomNavigationBarItem(
-              icon: Icon(Icons.notifications), label: "Notifications"),
-          BottomNavigationBarItem(icon: Icon(Icons.settings), label: "Settings")
-        ],
-        type: BottomNavigationBarType.fixed,
-        selectedItemColor: Colors.blue,
-        unselectedItemColor: Colors.black,
-        showSelectedLabels: true,
-        showUnselectedLabels: true,
-        onTap: (index) {
-          setState(() {
-            activeIndex = index;
-          });
-        },
-        currentIndex: activeIndex,
-      ),
+      drawer: _PMusicDrawer(),
+      bottomNavigationBar: _PMusicBottomNav(),
       appBar: AppBar(
         elevation: 4,
         backgroundColor: Colors.lightBlue,
         leadingWidth: 150,
-        leading: const Padding(
+        leading: Padding(
           padding: EdgeInsets.symmetric(horizontal: 8),
-          child: Text(
-            "PMusic",
-            style: TextStyle(
-                color: Colors.white, fontSize: 30, fontWeight: FontWeight.bold),
+          child: GestureDetector(
+            onTap: (){
+              _openPMusicDrawer();
+            },
+            child: Text(
+              "PMusic",
+              style: TextStyle(
+                  color: Colors.white, fontSize: 30, fontWeight: FontWeight.bold),
+            ),
           ),
         ),
       ),
       body: pages[activeIndex]// This trailing comma makes auto-formatting nicer for build methods.
     );
+  }
+
+  BottomNavigationBar _PMusicBottomNav() {
+    return BottomNavigationBar(
+      items: [
+        BottomNavigationBarItem(icon: Icon(Icons.home), label: "Home"),
+        BottomNavigationBarItem(
+            icon: Icon(Icons.credit_card), label: "Payments"),
+        BottomNavigationBarItem(
+            icon: Icon(Icons.notifications), label: "Notifications"),
+        BottomNavigationBarItem(icon: Icon(Icons.settings), label: "Settings")
+      ],
+      type: BottomNavigationBarType.fixed,
+      selectedItemColor: Colors.blue,
+      unselectedItemColor: Colors.black,
+      showSelectedLabels: true,
+      showUnselectedLabels: true,
+      onTap: (index) {
+        setState(() {
+          activeIndex = index;
+        });
+      },
+      currentIndex: activeIndex,
+    );
+  }
+
+  void _openPMusicDrawer(){
+      sc.currentState!.openDrawer();
+  }
+  Widget _PMusicDrawer(){
+    return Drawer(
+        backgroundColor: Colors.white,
+        width: 240,
+        child: ListView(
+          padding: EdgeInsets.zero,
+          children: <Widget>[
+            DrawerHeader(
+              decoration: BoxDecoration(
+                color: Colors.blue,
+              ),
+              child: Text(
+                'PMusic',
+                style: TextStyle(
+                  color: Colors.white,
+                  fontSize: 24,
+                ),
+              ),
+            ),
+            ListTile(
+              title: Text('Afro Music'),
+              onTap: () {
+                print("Drawer Item 1");
+              },
+            ),
+            ListTile(
+              title: Text('Latino Music'),
+              onTap: () {
+                print("Drawer Item 2");
+              },
+            ),
+            ListTile(
+              title: Text('Western Music'),
+              onTap: () {
+                print("Drawer Item 3");
+              },
+            ),
+          ],
+        ),
+      );
   }
 }
