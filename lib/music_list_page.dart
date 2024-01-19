@@ -13,7 +13,7 @@ class _MusicListPageState extends State<MusicListPage> {
       "name": "Sweather Waether",
       "title": "The Neighborhood",
       "profile":
-          "https://www.nairaland.com/attachments/12420653_img20200922123338_jpegc3324609d3a50ff0aa04abe7a3a7376e",
+          "https://storage.googleapis.com/makifaa_public/tw550_jeune-swag.webp",
       "is_audio": true
     },
     {
@@ -80,7 +80,7 @@ class _MusicListPageState extends State<MusicListPage> {
       "is_audio": false
     }
   ];
-
+  
   @override
   Widget build(BuildContext context) {
     return Container(

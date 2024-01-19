@@ -19,11 +19,16 @@ class _HomePageState extends State<HomePage> {
     NotificationsPage(),
     SettingsPage()
   ];
-
+  final GlobalKey<ScaffoldState> sc=GlobalKey<ScaffoldState>();
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      key: sc,
       backgroundColor: Colors.black,
+      drawer: Drawer(
+        backgroundColor: Colors.white,
+        width: 240,
+      ),
       bottomNavigationBar: BottomNavigationBar(
         items: [
           BottomNavigationBarItem(icon: Icon(Icons.home), label: "Home"),
@@ -47,7 +52,7 @@ class _HomePageState extends State<HomePage> {
       ),
       appBar: AppBar(
         elevation: 4,
-        backgroundColor: Colors.black,
+        backgroundColor: Colors.lightBlue,
         leadingWidth: 150,
         leading: const Padding(
           padding: EdgeInsets.symmetric(horizontal: 8),
