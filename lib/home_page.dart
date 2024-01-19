@@ -52,7 +52,7 @@ class _HomePageState extends State<HomePage> {
         leading: const Padding(
           padding: EdgeInsets.symmetric(horizontal: 8),
           child: Text(
-            "Tracks",
+            "PMusic",
             style: TextStyle(
                 color: Colors.white, fontSize: 30, fontWeight: FontWeight.bold),
           ),
