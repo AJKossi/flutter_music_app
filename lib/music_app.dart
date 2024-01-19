@@ -1,7 +1,6 @@
 
 import 'package:flutter/material.dart';
 import 'package:music_app/home_page.dart';
-import 'package:music_app/music_list_page.dart';
 
 class MusicApp extends StatelessWidget {
   const MusicApp({super.key});
@@ -15,7 +14,7 @@ class MusicApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const MusicListPage(),
+      home: const HomePage(),
     );
   }
 }
