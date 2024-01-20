@@ -31,49 +31,49 @@ class _MusicListPageState extends State<MusicListPage> {
       "is_audio": false
     },
     {
-      "name": "Happier Than Ever",
+      "name": "Reine TCHODIE",
       "title": "Billie Eiish",
       "profile":
           "https://i0.wp.com/dubawa.org/wp-content/uploads/2021/01/sarkodie.jpg",
       "is_audio": false
     },
     {
-      "name": "Hit Song",
+      "name": "Deborah",
       "title": "Heat On",
       "profile":
           "https://www.nairaland.com/attachments/12420653_img20200922123338_jpegc3324609d3a50ff0aa04abe7a3a7376e",
       "is_audio": false
     },
     {
-      "name": "Hit Song",
+      "name": "Akweley",
       "title": "Heat On",
       "profile":
           "https://www.nairaland.com/attachments/12420653_img20200922123338_jpegc3324609d3a50ff0aa04abe7a3a7376e",
       "is_audio": false
     },
     {
-      "name": "Hit Song",
+      "name": "Adama",
       "title": "Heat On",
       "profile":
           "https://www.nairaland.com/attachments/12420653_img20200922123338_jpegc3324609d3a50ff0aa04abe7a3a7376e",
       "is_audio": false
     },
     {
-      "name": "Hit Song",
+      "name": "Benedict",
       "title": "The Constant",
       "profile":
           "https://www.nairaland.com/attachments/12420653_img20200922123338_jpegc3324609d3a50ff0aa04abe7a3a7376e",
       "is_audio": false
     },
     {
-      "name": "Hit Song",
+      "name": "ImmoAsk",
       "title": "Heat On",
       "profile":
           "https://www.nairaland.com/attachments/12420653_img20200922123338_jpegc3324609d3a50ff0aa04abe7a3a7376e",
       "is_audio": false
     },
     {
-      "name": "Hit Song",
+      "name": "Omnisoft Africa",
       "title": "More Hitz",
       "profile":
           "https://www.nairaland.com/attachments/12420653_img20200922123338_jpegc3324609d3a50ff0aa04abe7a3a7376e",
