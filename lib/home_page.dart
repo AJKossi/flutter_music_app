@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:music_app/account_page.dart';
 import 'package:music_app/music_list_page.dart';
 import 'package:music_app/notifications_page.dart';
 import 'package:music_app/payment_page.dart';
@@ -17,7 +18,8 @@ class _HomePageState extends State<HomePage> {
     MusicListPage(),
     PaymentPage(),
     NotificationsPage(),
-    SettingsPage()
+    SettingsPage(),
+    AccountPage()
   ];
   final GlobalKey<ScaffoldState> sc=GlobalKey<ScaffoldState>();
   @override
@@ -63,7 +65,8 @@ class _HomePageState extends State<HomePage> {
             icon: Icon(Icons.credit_card), label: "Payments"),
         BottomNavigationBarItem(
             icon: Icon(Icons.notifications), label: "Notifications"),
-        BottomNavigationBarItem(icon: Icon(Icons.settings), label: "Settings")
+        BottomNavigationBarItem(icon: Icon(Icons.settings), label: "Settings"),
+        BottomNavigationBarItem(icon: Icon(Icons.verified_user), label: "Account")
       ],
       type: BottomNavigationBarType.fixed,
       selectedItemColor: Colors.blue,
