@@ -1,6 +1,8 @@
-
 import 'package:flutter/material.dart';
-import 'package:music_app/home_page.dart';
+import 'package:music_app/account_page.dart';
+import 'package:music_app/payment_page.dart';
+import 'package:music_app/settings_page.dart';
+import 'package:music_app/splash_page.dart';
 
 class MusicApp extends StatelessWidget {
   const MusicApp({super.key});
@@ -14,7 +16,13 @@ class MusicApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const HomePage(),
+      initialRoute: "/",
+      routes: <String, WidgetBuilder>{
+        "/": (context) => const SplashPage(),
+        "/settings": (context) => const SettingsPage(),
+        "/payment": (context) => const PaymentPage(),
+        "/account": (context) => const AccountPage()
+      },
     );
   }
 }
